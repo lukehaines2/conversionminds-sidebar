@@ -1,0 +1,4 @@
+@import '~bootstrap/scss/bootstrap.scss';
+
+$bodyHeight: calc(100vh - #{$nav-link-height} - #{$nav-link-padding-y * 2});
+$navHeight: calc(#{$nav-link-height} + #{$nav-link-padding-y * 2});

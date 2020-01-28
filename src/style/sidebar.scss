@@ -1,0 +1,28 @@
+@import './variables.scss';
+
+$paddingTop: 0.5rem;
+
+.sidebar {
+  min-width: 250px;
+  max-width: 250px;
+  background: #7386D5;
+  color: #fff;
+  margin-left: -250px;
+  transition: all 0.5s;
+
+  &.show {
+    margin-left: 0;
+    transition: .5s;
+  }
+
+  .sidebar-header {
+    height: $navHeight;
+    padding-top: 0;
+    padding-bottom: 0;
+
+    span {
+      font-size: 2rem;
+      cursor: pointer;
+    }
+  }
+}
