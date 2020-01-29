@@ -13,6 +13,10 @@ $paddingTop: 0.5rem;
   &.show {
     margin-left: 0;
     transition: .5s;
+
+    @include media-breakpoint-down(sm) {
+      margin-left: -250px;
+    }
   }
 
   .sidebar-header {

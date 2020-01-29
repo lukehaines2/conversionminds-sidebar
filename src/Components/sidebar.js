@@ -7,12 +7,17 @@ const Sidebar = (props) => {
   return (
     <div className={cx('sidebar', { 'show': !props.collapsed })}>
 
-      <div className="navbar sidebar-header">
+      <nav className="navbar sidebar-header">
         <span onClick={props.toggleNavbar}>&times;</span>
-      </div>
+      </nav>
 
     </div>
   );
 }
 
 export default Sidebar;
+
+// TODO: Fix triple CSS rendering
+// https://github.com/BilalBouk/reactstrap-basic-sidebar
+
+// React Socks
