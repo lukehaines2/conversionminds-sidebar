@@ -14,7 +14,7 @@ $paddingTop: 0.5rem;
     margin-left: 0;
     transition: .5s;
 
-    @include media-breakpoint-down(xs) {
+    @include media-breakpoint-only(xs) {
       margin-left: -250px;
     }
   }
