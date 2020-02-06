@@ -1,11 +1,11 @@
-@import './variables.scss';
+@import './variables';
 
 $paddingTop: 0.5rem;
 
 .sidebar {
   min-width: 250px;
   max-width: 250px;
-  background: #7386D5;
+  background: #343a40;
   color: #fff;
   margin-left: -250px;
   transition: all 0.5s;
@@ -28,5 +28,9 @@ $paddingTop: 0.5rem;
       font-size: 2rem;
       cursor: pointer;
     }
+  }
+
+  a {
+    color: lightslategrey;
   }
 }
