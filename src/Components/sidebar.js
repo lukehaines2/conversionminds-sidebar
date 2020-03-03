@@ -3,6 +3,8 @@ import { Nav, NavItem, NavLink } from 'reactstrap';
 import cx from 'classnames';
 import '../style/sidebar.scss';
 
+import NavButton from "./navButton";
+
 const Sidebar = (props) => {
 
   return (
@@ -20,7 +22,7 @@ const Sidebar = (props) => {
           <NavLink href="#">View 1</NavLink>
         </NavItem>
         <NavItem>
-          <NavLink href="#">Page 2</NavLink>
+          <NavButton label="I'm Accessible" className="haha and this one" />
         </NavItem>
         <NavItem>
           <NavLink href="#">Page 3</NavLink>

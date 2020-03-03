@@ -1,0 +1,20 @@
+@import "./variables";
+
+
+// Fake <a> tag style button that solves accessibility issues for empty # hrefs!
+.link-button {
+  @extend .nav-link;
+  background-color: transparent;
+  border: none;
+  width: 100%;
+  text-align: left;
+
+  &:focus {
+    outline: none;
+  }
+
+  @include hover-focus() {
+    // color: $navbar-dark-hover-color;
+    color: $link-hover-color;
+  }
+}
