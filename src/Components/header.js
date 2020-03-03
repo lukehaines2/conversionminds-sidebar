@@ -1,12 +1,15 @@
 import React, { useState } from "react";
 import { Badge, Button } from 'reactstrap';
 
+// import NavButton from "./navButton";
 
 const Header = (props) => {
 
   const [count, setCount] = useState(0);
-  const increment = () => setCount(count + 1);
-  const decrement = () => setCount(count - 1);
+  const increment = () => setCount(prevCount => prevCount + 1);
+  const decrement = () => setCount(prevCount => prevCount > 0 ? prevCount - 1 : 0);
+
+  console.log('L18 === count', count);
 
   return (
     <nav className="navbar navbar-dark bg-dark">
