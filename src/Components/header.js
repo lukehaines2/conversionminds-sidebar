@@ -12,7 +12,7 @@ const Header = (props) => {
     <nav className="navbar navbar-dark bg-dark">
       <a className="navbar-brand" href="#">Hidden brand</a>
       <div>
-        <Button color="primary" outline className="mr-3" onClick={increment}>
+        <Button color="primary" outline className="mr-3 gori" onClick={increment}>
           Notifications <Badge color="secondary">{count}</Badge>
         </Button>
         <Button color="danger" outline className="mr-3" onClick={decrement}>
