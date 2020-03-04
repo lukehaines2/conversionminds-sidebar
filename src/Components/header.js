@@ -9,8 +9,6 @@ const Header = (props) => {
   const increment = () => setCount(prevCount => prevCount + 1);
   const decrement = () => setCount(prevCount => prevCount > 0 ? prevCount - 1 : 0);
 
-  console.log('L18 === count', count);
-
   return (
     <nav className="navbar navbar-dark bg-dark">
       <a className="navbar-brand" href="#">Hidden brand</a>
