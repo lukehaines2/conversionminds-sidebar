@@ -11,22 +11,21 @@
 
   .grid {
     display: grid;
-    // grid-gap: 10px;
-    grid-template-columns: repeat(auto-fit, minmax(125px, 1fr));
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
     grid-auto-rows: minmax(50px, auto);
     grid-auto-flow: dense;
     background: #e9ecef;
   }
 
   img:nth-child(odd) {
-    // border: 1px solid red;
     grid-column-end: span 2;
     grid-row-end: span 2;
-    // width: 100%;
-    height: 100%;
-  }
-
-  img:nth-child(even) {
+    width: 100%;
     // height: 100%;
   }
+
+  // img:nth-child(even) {
+  //   height: 100%;
+  // }
 }
