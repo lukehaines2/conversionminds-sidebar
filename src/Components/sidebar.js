@@ -1,5 +1,6 @@
 import React from 'react';
 import { Nav, NavItem, NavLink } from 'reactstrap';
+import { NavLink as RRNavLink } from 'react-router-dom';
 import cx from 'classnames';
 import '../style/sidebar.scss';
 
@@ -16,7 +17,7 @@ const Sidebar = (props) => {
 
       <Nav vertical>
         <NavItem>
-          <NavLink href="#">Page 1</NavLink>
+          <NavLink tag={RRNavLink} to="/gridResponsive">Grid cards</NavLink>
         </NavItem>
         <NavItem>
           <NavLink href="#">View 1</NavLink>
