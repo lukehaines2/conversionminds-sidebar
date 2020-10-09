@@ -18,11 +18,9 @@ const ImageGrid = () => {
 
 
   return (
-    <div className="grid-container">
-      <div className="grid">
-        <h3>MASONRY IMAGE GRID</h3>
-        {createGrid()}
-      </div>
+    <div className="grid">
+      <h3>MASONRY IMAGE GRID</h3>
+      {createGrid()}
     </div>
   )
 }
