@@ -20,25 +20,25 @@ const Sidebar = (props) => {
           <NavLink tag={RRNavLink} to="/gridResponsive">Grid cards</NavLink>
         </NavItem>
         <NavItem>
-          <NavLink href="#">View 1</NavLink>
+          <NavLink tag={RRNavLink} to="/">Home</NavLink>
         </NavItem>
         <NavItem>
           <NavButton label="I'm Accessible" className="haha and this one" />
         </NavItem>
         <NavItem>
-          <NavLink href="#">Page 3</NavLink>
+          <NavLink tag={RRNavLink} to="/">Page 3</NavLink>
         </NavItem>
         <NavItem>
-          <NavLink href="#">Page 4</NavLink>
+          <NavLink tag={RRNavLink} to="/">Page 4</NavLink>
         </NavItem>
         <NavItem>
-          <NavLink href="#">Link</NavLink>
+          <NavLink tag={RRNavLink} to="/">Link</NavLink>
         </NavItem>
         <NavItem>
-          <NavLink href="#">LINK</NavLink>
+          <NavLink tag={RRNavLink} to="/">LINK</NavLink>
         </NavItem>
         <NavItem>
-          <NavLink href="#">Link</NavLink>
+          <NavLink tag={RRNavLink} to="/">Link</NavLink>
         </NavItem>
       </Nav>
 

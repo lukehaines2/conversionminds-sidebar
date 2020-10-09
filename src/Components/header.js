@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import { Badge, Button } from 'reactstrap';
+import { Badge, Button } from "reactstrap";
+import { Link } from "react-router-dom";
 
-// import NavButton from "./navButton";
 
 const Header = (props) => {
 
@@ -11,7 +11,7 @@ const Header = (props) => {
 
   return (
     <nav className="navbar navbar-dark bg-dark">
-      <a className="navbar-brand" href="#">Hidden brand</a>
+      <Link className="navbar-brand" to="/gridResponsive">Hidden brand</Link>
       <div>
         <Button color="primary" outline className="mr-3 gori" onClick={increment}>
           Notifications <Badge color="secondary">{count}</Badge>
