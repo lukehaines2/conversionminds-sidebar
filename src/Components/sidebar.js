@@ -50,5 +50,4 @@ export default Sidebar;
 
 // TODO: Fix triple CSS rendering
 // https://github.com/BilalBouk/reactstrap-basic-sidebar
-
 // React Socks
