@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { BrowserRouter as Router } from "react-router-dom";
 
 import Sidebar from "./Components/sidebar";
 import Content from "./Components/content";
@@ -10,10 +11,12 @@ function App() {
   const toggleNavbar = () => setCollapsed(!collapsed);
 
   return (
-    <div className="app-wrapper">
-      <Sidebar {...{ collapsed, toggleNavbar }} />
-      <Content {...{ collapsed, toggleNavbar }} />
-    </div>
+    <Router>
+      <div className="app-wrapper">
+        <Sidebar {...{ collapsed, toggleNavbar }} />
+        <Content {...{ collapsed, toggleNavbar }} />
+      </div>
+    </Router>
   );
 }
 

@@ -1,9 +1,5 @@
 import React from 'react';
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-} from "react-router-dom";
+import { Switch, Route } from "react-router-dom";
 
 import Header from './header';
 import '../style/content.scss';
@@ -15,16 +11,14 @@ const Content = (props) => (
   <div className="content-wrapper">
     <Header {...props} />
     <div className="content">
-      <Router>
-        <Switch>
-          <Route exact path="/">
-            <ImageGrid />
-          </Route>
-          <Route path="/gridResponsive">
-            <GridResponsive />
-          </Route>
-        </Switch>
-      </Router>
+      <Switch>
+        <Route exact path="/">
+          <ImageGrid />
+        </Route>
+        <Route path="/gridResponsive">
+          <GridResponsive />
+        </Route>
+      </Switch>
     </div>
   </div>
 );
