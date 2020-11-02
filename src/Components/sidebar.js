@@ -23,7 +23,7 @@ const Sidebar = (props) => {
           <NavLink tag={RRNavLink} to="/">Home</NavLink>
         </NavItem>
         <NavItem>
-          <NavButton label="I'm Accessible" className="haha and this one" />
+          <NavButton label="I'm Accessible" />
         </NavItem>
         <NavItem>
           <NavLink tag={RRNavLink} to="/">Page 3</NavLink>
